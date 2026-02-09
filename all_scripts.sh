@@ -1,3 +1,4 @@
+
 ubuntu@ip-172-31-45-91:~$ cat combined_scripts.sh
 #!/bin/bash
 echo "Shebang"
@@ -18,6 +19,12 @@ echo "rancho : ratta maroga to fail ho jayoge"
 read -p "Enter the package_name: " Package_name
 
 echo "Updating_system & installing $Package_name"
+
+loops : Repeating the task multiple time.
+
+for i in {5..1}do
+        echo $i
+done
 
 # if any contion in if you use []. and for the command don't use [] bracket.
 
@@ -104,6 +111,35 @@ do
 done
 echo "Thanku for teach like that"
 
+ubuntu@ip-172-31-45-91:~$ cat loops.sh
+for (( i=2; i<21; i+=2 ));
+do
+        echo $i
+done
+echo "Abhi loops mein problem nahi hoga"
+
+ubuntu@ip-172-31-45-91:~$ ./loops.sh
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+Abhi loops mein problem nahi hoga
+
+Even number:
+
+for i in {1..10}
+do
+  if [ $((i % 2)) -eq 0 ]
+  then
+    echo $i
+  fi
+done
 
 #!/bin/bash
 
